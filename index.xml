@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cheney&#39;s blog</title>
+    <link>https://cheneydev.github.io/</link>
+    <description>Recent content on Cheney&#39;s blog</description>
+    <image>
+      <title>Cheney&#39;s blog</title>
+      <url>https://cheneydev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://cheneydev.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 30 May 2023 21:40:40 +0800</lastBuildDate><atom:link href="https://cheneydev.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何使用 AI 孙燕姿歌手模型</title>
+      <link>https://cheneydev.github.io/posts/2023-05-30-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8ai%E5%AD%99%E7%87%95%E5%A7%BF%E6%AD%8C%E6%89%8B%E6%A8%A1%E5%9E%8B/</link>
+      <pubDate>Tue, 30 May 2023 21:40:40 +0800</pubDate>
+      
+      <guid>https://cheneydev.github.io/posts/2023-05-30-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8ai%E5%AD%99%E7%87%95%E5%A7%BF%E6%AD%8C%E6%89%8B%E6%A8%A1%E5%9E%8B/</guid>
+      <description>实现 AI 孙燕姿主要借助 so-vits-svc 和别人基于此项目训练出来的孙燕姿声音模型。
+项目中提供了 Colab 版本的代码，所以这里介绍如何在 Colab 中运行此项目并导入孙燕姿声音模型。
+初始化模型 将 Colab 文件保存到自己的 Google Drive ，一次运行各个 Cell ，在 (Optional) Other Downloads (.zip) Step o.1 这一步导入孙燕姿模型。首先将下载好的孙燕姿模型上传到自己的 Google Drive （这里不提供链接），右键获取该文件的分享链接（所有人可见），输入到 Cell 的 model_url 里。然后运行下一个 Cell ，注意下一份 Cell 下面的重启运行时环境的提示，需要手动重启运行时环境，重启后不需要从头开始执行，接着运行下面的 Cell 即可。
+处理音频文件 我们需要将目标歌曲的伴奏和人声分离，我使用的是 vocalremover.org 这个网站，将分离后的伴奏和人声分别下载保存。
+人声文件是我们需要丢给模型处理的文件，当模型把人声替换成孙燕姿的声音之后，我们将它下载下来并与刚才的伴奏合并（我使用的是剪映在线版）。
+注意，由于性能限制，我们需要把人声音频切分成 1 分钟左右的片段来交给模型处理，然后将输出音频合并成完整的歌曲人声部分。
+生成孙燕姿音色歌曲 在 Colab 的文件目录中找到 raw 文件夹，将人声文件放进去。
+点击运行下一个 Cell ，运行完毕后会出来如下表单：
+参数这里建议像图里那样填写。
+然后点击 convert 等待完成。
+输出结果在 outputs 文件夹下。</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://cheneydev.github.io/posts/hello-world/</link>
+      <pubDate>Thu, 25 May 2023 10:49:08 +0800</pubDate>
+      
+      <guid>https://cheneydev.github.io/posts/hello-world/</guid>
+      <description>Hello World!</description>
+    </item>
+    
+  </channel>
+</rss>
