@@ -25,7 +25,7 @@
 将敏感信息添加到credentials.properties文件中。例如：
 password=your_password_here 在配置类上使用 @PropertySource 注解，指定加载刚才的文件。这样可以把文件的内容加载到 Spring Context 中。
 在配置文件中使用（以配置 MySQL 数据源为例）：
-spring: datasource: driver-class-name: com.mysql.cj.jdbc.Driver url: jdbc:mysql://${mysql-host}:${mysql-port}/${mysql-database}?useSSL=false&amp;amp;serverTimezone=UTC+8&amp;amp;allowPublicKeyRetrieval=true username: ${mysql-username} password: ${mysql-password} </description>
+spring: datasource: driver-class-name: com.mysql.cj.jdbc.Driver url: jdbc:mysql://${mysql-host}:${mysql-port}/${mysql-database}?useSSL=false&amp;amp;serverTimezone=Asia/Shanghai&amp;amp;allowPublicKeyRetrieval=true username: ${mysql-username} password: ${mysql-password} </description>
     </item>
     
     <item>
