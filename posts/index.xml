@@ -20,7 +20,7 @@
       <guid>https://cheneydev.github.io/posts/2023-06-01-%E5%9C%A8springboot%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AE%89%E5%85%A8%E5%AD%98%E6%94%BE%E5%AF%86%E7%A0%81/</guid>
       <description>实现在 Spring Boot 项目中安全地存储敏感信息，可以使用外部配置文件而不是将敏感信息明文存储在 application.yml 文件中。这样可以避免敏感信息被 Git 提交到网络上。
 操作方法：
-在 .gitignore 文件中添加 */credentials.properties 来让版本控制工具忽略这个文件。
+在 .gitignore 文件中添加 **/credentials.properties 来让版本控制工具忽略这个文件。
 在 resources 文件夹下创建 credentials.properties，用来存储密码等敏感信息。
 将敏感信息添加到credentials.properties文件中。例如：
 password=your_password_here 在配置类上使用 @PropertySource 注解，指定加载刚才的文件。这样可以把文件的内容加载到 Spring Context 中。
