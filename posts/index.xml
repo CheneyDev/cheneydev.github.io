@@ -11,7 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jun 2023 10:50:08 +0800</lastBuildDate><atom:link href="https://cheneydev.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Oct 2023 10:15:02 +0800</lastBuildDate><atom:link href="https://cheneydev.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 面试笔记</title>
+      <link>https://cheneydev.github.io/posts/2023-10-14-mysql-%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sat, 14 Oct 2023 10:15:02 +0800</pubDate>
+      
+      <guid>https://cheneydev.github.io/posts/2023-10-14-mysql-%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
+      <description>事务 什么是事务 事务就是一组SQL语句，作为一个工作单元以原子方式进行处理。要么全部执行成功，要么全部执行失败。
+事务四大特性 ACID 原子性（atomicity） 一个事务必须被视为一个不可分割的工作单元，整个事务中的所有操作要么全部提交成功，要么全部失败回滚。
+一致性（consistency） 数据库总是从一个一致性状态转换到下一个一致性状态。如果事务最终没有提交，该事务所做的任何修改都不会被保存到数据库中。
+隔离性（isolation） 一个事务所做的修改在最终提交以前，对其他事务是不可见的。
+持久性（durability） 一旦提交，事务所做的修改就会被永久保存到数据库中。此时即使系统崩溃，数据也不会丢失。
+事务的四个隔离级别 READ UNCOMMITTED（未提交读） 在事务中可以查看其他事务中还没有提交的修改。
+READ COMMITTED（提交读） 大多数数据库系统的默认隔离级别是READ COMMITTED（但MySQL不是）。一个事务可以看到其他事务在它开始之后提交的修改，但在该事务提交之前，其所做的任何修改对其他事务都是不可见的。这个级别仍然允许不可重复读（nonrepeatable read），这意味着同一事务中两次执行相同语句，可能会看到不同的数据结果。
+REPEATABLE READ（可重复读） MySQL 的默认隔离级别，REPEATABLE READ解决了READ COMMITTED[7]级别的不可重复读问题，保证了在同一个事务中多次读取相同行数据的结果是一样的。但是理论上，可重复读隔离级别还是无法解决另外一个幻读（phantom read）的问题。
+SERIALIZABLE（串行化） 该级别通过强制事务按序执行，使不同事务之间不可能产生冲突，从而解决了前面说的幻读问题。
+死锁 死锁是指两个或多个事务相互持有和请求相同资源上的锁，产生了循环依赖。当多个事务试图以不同的顺序锁定资源时会导致死锁。当多个事务锁定相同的资源时，也可能会发生死锁。</description>
+    </item>
+    
     <item>
       <title>在 Spring Boot 项目的配置文件中安全存放敏感信息（密码）</title>
       <link>https://cheneydev.github.io/posts/2023-06-01-%E5%9C%A8springboot%E9%A1%B9%E7%9B%AE%E7%9A%84%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E5%AE%89%E5%85%A8%E5%AD%98%E6%94%BE%E5%AF%86%E7%A0%81/</link>
