@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Oct 2023 10:38:40 +0800</lastBuildDate><atom:link href="https://cheneydev.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Oct 2023 22:28:22 +0800</lastBuildDate><atom:link href="https://cheneydev.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>设计模式面试笔记</title>
+      <link>https://cheneydev.github.io/posts/2023-10-21-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 22 Oct 2023 22:28:22 +0800</pubDate>
+      
+      <guid>https://cheneydev.github.io/posts/2023-10-21-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</guid>
+      <description>七大原则 原则名称 描述 单一职责原则 (SRP) 一个类应该只有一个引起变化的原因，即一个类应该只有一个单一的责任。 开放封闭原则 (OCP) 软件实体应该是开放于扩展的，但封闭于修改的，可以通过添加新功能来扩展系统，而不需要修改已存在的代码。 里氏替换原则 (LSP) 子类必须能够替换其基类而不引起不良的行为，子类应该保持对基类的兼容性，不应该破坏父类的预期行为。 依赖倒置原则 (DIP) 高层模块不应该依赖于低层模块，二者都应该依赖于抽象，抽象不应该依赖于具体细节，具体细节应该依赖于抽象。 接口隔离原则 (ISP) 客户端不应该被迫依赖于它们不使用的接口，接口应该被细分，使得客户端只需知道与其相关的接口。 迪米特法则 (LoD) 每个单元应该只与其紧密相关的少数其他单元进行交互，减少模块之间的耦合性，使系统更加灵活和易于维护。 合成/聚合复用原则 (CARP) 尽量使用合成/聚合关系来实现代码重用，而不是继承，降低类之间的耦合性，使系统更灵活。 </description>
+    </item>
+    
     <item>
       <title>Java 面试笔记</title>
       <link>https://cheneydev.github.io/posts/2023-10-14-java-%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AE%B0/</link>
