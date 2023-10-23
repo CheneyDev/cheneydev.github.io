@@ -18,8 +18,9 @@
       <pubDate>Mon, 23 Oct 2023 22:17:50 +0800</pubDate>
       
       <guid>https://cheneydev.github.io/posts/2023-10-21-chatgpt-%E6%8F%90%E7%A4%BA%E5%B7%A5%E7%A8%8B/</guid>
-      <description>Prompt 实践 学习设计模式
-请用易于理解的语言介绍“单例模式”，包含这些部分：“什么是单例模式”、“解决的问题”、“现实中的例子”、“Java 示例代码”、“适用场景”、“如何实现”、“优缺点” </description>
+      <description>提示工程（Prompt Engineering）关注 Prompt 开发和优化，帮助用户更好的与大语言模型进行交互，引导 AI 生成更加符合预期的内容。
+Prompt 实践 这里记录了我在使用 ChatGPT 过程中总结的还算不错的 Prompt 写法示例。
+学习设计模式 请用易于理解的语言介绍“单例模式”，包含这些部分：“什么是单例模式”、“解决的问题”、“现实中的例子”、“Java 示例代码”、“适用场景”、“如何实现”、“优缺点”。</description>
     </item>
     
     <item>
