@@ -39,8 +39,11 @@ Prompt 实践 这里记录了我在使用 ChatGPT 过程中总结的还算不错
       <pubDate>Sat, 14 Oct 2023 10:38:40 +0800</pubDate>
       
       <guid>https://cheneydev.github.io/posts/2023-10-14-java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>基础知识 基本数据类型、包装类、字节数 基本数据类型 包装类型 字节数 byte Byte 1 short Short 2 int Integer 4 long Long 8 float Float 4 double Double 8 boolean Boolean 1（通常） 面向对象三大特征 特征 描述 封装 (Encapsulation) 数据和操作方法封装在单元内，限制外部访问，确保数据安全性。 继承 (Inheritance) 子类可以基于父类的属性和方法扩展其它属性和方法，促进代码重用和扩展性。 多态 (Polymorphism) 不同对象对同一消息有不同响应，提高灵活性和可维护性。 abstract 和 interface 抽象类（abstract class）是一种类，可以包含抽象方法和具体方法，支持单一继承，而接口（interface）是一种纯抽象类型，只包含抽象方法，支持多重继承。
-特点 抽象类 接口 类型 类 接口（纯抽象类型） 方法 可包含抽象方法和具体方法 只包含抽象方法，没有具体方法 字段 可包含字段 不包含字段 继承和实现 可以继承一个抽象类 类可以实现多个接口 多重继承 不支持多重继承 类可以同时实现多个接口 实例化 不能实例化 不能实例化 访问修饰符 可以使用各种访问修饰符（public、protected、private等） 方法默认为public和abstract 方法覆盖（重写） 子类必须覆盖抽象方法，除非子类也是抽象类 实现类必须提供接口中定义的所有方法的具体实现 用途 构建类层次结构，提供通用实现和规范 定义契约，实现多态，允许类共享通用方法 集合 List,Set,Map 三者的区别？底层数据结构？ 集合类型 具体实现类 底层数据结构 有序性 重复元素 List ArrayList 数组 有序 可重复 LinkedList 双向链表 有序 可重复 Set HashSet 哈希表（基于 HashMap） 无序 不可重复 LinkedHashSet 哈希表和双向链表（基于 LinkedHashMap） 有序 不可重复 TreeSet 红黑树 有序 不可重复 Map HashMap 哈希表 无序 不可重复 LinkedHashMap 哈希表和双向链表 有序 不可重复 TreeMap 红黑树 有序 不可重复 有哪些集合是线程不安全的？怎么解决？ 在 Java 中，许多标准集合类是线程不安全的，这意味着它们在多线程环境下可能会导致不确定的行为或数据损坏。一些常见的线程不安全的集合包括：</description>
+      <description>基础知识 基本数据类型、包装类、字节数 基本数据类型 包装类型 字节数 byte Byte 1 short Short 2 int Integer 4 long Long 8 float Float 4 double Double 8 boolean Boolean 1（通常） String、StringBuffer、StringBuilder 的区别 在Java中，String、StringBuffer和StringBuilder都用于处理字符串，但它们有不同的特性和适用场景。以下是它们的区别以及在常见场景下的示例代码：
+String（字符串）：
+String 是不可变的，一旦创建，其内容不能被更改。 由于其不可变性，每次对字符串进行操作时都会创建一个新的字符串对象，这可能导致内存浪费。 适用于不需要频繁修改字符串内容的情况。 String str = &amp;#34;Hello&amp;#34;; str = str + &amp;#34; World&amp;#34;; // 创建了一个新的字符串对象 StringBuffer（字符串缓冲区）：
+StringBuffer 是可变的，用于处理多次字符串操作时，效率较高。 StringBuffer 的操作是线程安全的，适用于多线程环境。 StringBuffer buffer = new StringBuffer(&amp;#34;Hello&amp;#34;); buffer.append(&amp;#34; World&amp;#34;); // 在原字符串上追加，不创建新对象 StringBuilder（字符串构建器）：
+StringBuilder 与 StringBuffer 类似，也是可变的，但不保证线程安全。 StringBuilder 通常比 StringBuffer 更快，但在多线程环境下，如果需要线程安全性，应该使用 StringBuffer。 StringBuilder builder = new StringBuilder(&amp;#34;Hello&amp;#34;); builder.</description>
     </item>
     
     <item>
