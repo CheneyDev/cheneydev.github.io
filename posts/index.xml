@@ -34,19 +34,6 @@ Prompt 实践 这里记录了我在使用 ChatGPT 过程中总结的还算不错
     </item>
     
     <item>
-      <title>Java 学习笔记</title>
-      <link>https://cheneydev.github.io/posts/2023-10-14-java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Sat, 14 Oct 2023 10:38:40 +0800</pubDate>
-      
-      <guid>https://cheneydev.github.io/posts/2023-10-14-java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
-      <description>基础知识 基本数据类型、包装类、字节数 基本数据类型 包装类型 字节数 byte Byte 1 short Short 2 int Integer 4 long Long 8 float Float 4 double Double 8 boolean Boolean 1（通常） String、StringBuffer、StringBuilder 的区别 在Java中，String、StringBuffer和StringBuilder都用于处理字符串，但它们有不同的特性和适用场景。以下是它们的区别以及在常见场景下的示例代码：
-String（字符串）：
-String 是不可变的，一旦创建，其内容不能被更改。 由于其不可变性，每次对字符串进行操作时都会创建一个新的字符串对象，这可能导致内存浪费。 适用于不需要频繁修改字符串内容的情况。 String str = &amp;#34;Hello&amp;#34;; str = str + &amp;#34; World&amp;#34;; // 创建了一个新的字符串对象 StringBuffer（字符串缓冲区）：
-StringBuffer 是可变的，用于处理多次字符串操作时，效率较高。 StringBuffer 的操作是线程安全的，适用于多线程环境。 StringBuffer buffer = new StringBuffer(&amp;#34;Hello&amp;#34;); buffer.append(&amp;#34; World&amp;#34;); // 在原字符串上追加，不创建新对象 StringBuilder（字符串构建器）：
-StringBuilder 与 StringBuffer 类似，也是可变的，但不保证线程安全。 StringBuilder 通常比 StringBuffer 更快，但在多线程环境下，如果需要线程安全性，应该使用 StringBuffer。 StringBuilder builder = new StringBuilder(&amp;#34;Hello&amp;#34;); builder.</description>
-    </item>
-    
-    <item>
       <title>MySQL 学习笔记</title>
       <link>https://cheneydev.github.io/posts/2023-10-14-mysql-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Sat, 14 Oct 2023 10:15:02 +0800</pubDate>
